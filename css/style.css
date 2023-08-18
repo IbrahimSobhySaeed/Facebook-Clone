@@ -1,0 +1,259 @@
+.bg-gray {
+    background-color: #f0f2f5;
+  }
+  .fs-0 {
+    font-size: 4rem;
+  }
+  .fs-7 {
+    font-size: 0.8rem;
+  }
+  .fs-8{
+    font-size: .5rem;
+  }
+  .nav__btn button:hover {
+    background: #f0f2f5 ;
+  }
+  .nav__btn button:hover i {
+    color: #0d6efd !important;
+  }
+  .nav__btn-active i {
+    color: #0d6efd !important;
+  }
+  .nav__btn-active {
+    position: relative;
+  }
+  .nav__btn-active:before {
+    content: "";
+    position: absolute;
+    bottom: -4.5px;
+    left: 0;
+    transform: translate(0, 4.5px);
+    width: 100%;
+    height: 3px;
+    border-bottom: 3px solid #0d6efd !important;
+  }
+  .dropdown-item:active {
+    background-color: #d5d5d5 !important;
+  }
+  .modal-content:hover .fa-phone-alt {
+    color: #0d6efd !important;
+  }
+  .modal-content:hover .fa-video {
+    color: #0d6efd !important;
+  }
+  .modal-content:hover .fa-file-image {
+    color: #0d6efd !important;
+  }
+  .modal-content:hover .fa-plus-circle {
+    color: #0d6efd !important;
+  }
+  .modal-content:hover .fa-portrait {
+    color: #0d6efd !important;
+  }
+  .modal-content:hover .fa-adjust {
+    color: #0d6efd !important;
+  }
+  .modal-content:hover .fa-thumbs-up {
+    color: #0d6efd !important;
+  }
+  /* edit */
+  .edit-button {
+    opacity: 0;
+  }
+  .edit-button:hover {
+    opacity: 1;
+  }
+  .edit-heading:hover .edit-button {
+    opacity: 1;
+  }
+  .scrollbar:hover {
+    overflow: auto !important;
+  }
+  .sponsor-icon {
+    opacity: 0;
+  }
+  .dropdown-item:hover .sponsor-icon {
+    opacity: 1;
+  }
+  .pop-avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .chat-box {
+    border: 0 !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .story:hover {
+    opacity: 0.8;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .post__comment .accordion-button::after {
+    margin-left: 0 !important;
+    display: none !important;
+  }
+  .post__comment .accordion-button:hover {
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+  .post__comment .accordion-button:not(.collapsed) {
+    background: transparent !important;
+  }
+  .post__comment .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+  }
+  @media (min-width: 62em) {
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  
+
+
+  .nav-main{
+   min-height: 56px;
+    z-index: 5
+  }
+  .logo{
+    font-size: 3rem;
+  }
+  nav .searchBox{
+  min-height: 40px;
+   min-width: 230px
+  }
+  nav .searchMenu{
+    width: 20em;
+     max-height: 600px";
+    }
+    nav .input-group-text_mobile{
+       min-height: 40px;
+    }
+    nav .SearchItems li img{
+     width: 35px;
+      height: 35px;
+      object-fit: cover;
+    }
+
+    .sugMsg{
+      position: absolute;
+      bottom: 0;
+      right: 80px;
+    }
+    .sideBar{
+      max-width: 320px; width: 100%; z-index: 4 ;
+    }
+    .sideBar{
+      padding-top: 3.5rem;
+    }
+
+
+    .sideBar img  {
+    width: 38px; height: 38px; object-fit: cover
+
+    }
+    .Timeline{
+      padding-top: 56px; max-width: 680px
+    }
+    .StoryContainer .story{
+      width: 6em; height: 190px
+    }
+    .St_main{
+      min-height: 125px !important
+      ; object-fit: cover
+
+    }
+    .St_content{
+     min-height: 65px
+    }
+    .story img{
+
+      min-height: 190px; object-fit: cover
+
+    }
+    .AddPost img{
+      width: 38px; height: 38px; object-fit: cover
+
+    }
+    .AddPost_body img{
+  
+      width: 38px;
+      height: 38px;
+      object-fit: cover;
+
+    }
+    .AddPpstImo img{
+
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+
+    }
+
+    .SliderContainer {
+      max-width: 450px ;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .SliderStory{
+    
+      display: flex;
+      justify-content: flex-end;
+
+    }
+    .SliderStory img{
+      width: 38px; height: 38px; object-fit: cover
+
+    }
+
+ .imgRounded{
+width: 38px; height: 38px; object-fit: cover
+
+ }
+ .imgRoundedS2{
+  width: 38px; height: 38px; object-fit: cover
+  
+   }
+
+ .likeColor{
+  color: blue !important;
+ }
+ .ulList{
+    width: 23em; max-height: 600px;
+ }
+ .searchContainer{
+min-height: 40px; min-width: 230px
+ }
+ .ImageBox2{
+
+  width: 48px; height: 48px; object-fit: cover;
+ }
+ .ImageBox3{
+width: 58px; height: 58px; object-fit: cover;
+ }
+ .notification{
+width: 23em; max-height: 600px; overflow-y: auto
+ }
+ .chatImg{
+  width: 28px; height: 28px; object-fit: cover;
+
+ }
+
+ .chatSeen{
+width: 15px;
+ height: 15px; 
+ object-fit: cover
+
+ }
+ .btnColor{
+  background-color: #42b72a;
+ }
+ .msgfoot{
+  min-height: 300px;
+ }

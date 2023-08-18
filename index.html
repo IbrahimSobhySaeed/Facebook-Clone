@@ -1,0 +1,222 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Facebook Clone</title>
+  </head>
+  <body class="bg-gray">
+    <div class="container mt-5 pt-5 d-flex flex-column flex-lg-row justify-content-evenly">
+      <div class="text-center text-lg-start mt-0 pt-0 mt-lg-5 pt-lg-5">
+        <h1 class="text-primary fw-bold fs-0">facebook</h1>
+        <p class="w-75 mx-auto fs-4 mx-lg-0">facebook helps you connect and share with the people in your life.</p>
+      </div>
+      <div style="max-width: 28rem; width: 100%">
+        <div class="bg-white shadow rounded p-3  input-group-lg">
+          <form action="" id="login-form">
+            <div class="col-12">
+                        
+              <p id="validForm"></p>
+
+              <div class="invalid-feedback error">
+              </div>
+            </div>
+            <div class="col-12">
+              <input type="email" class="form-control my-3" id="userEmail" placeholder="Email address or phone number" />
+              <div class="invalid-feedback error">
+                                
+              </div>
+            </div>
+            <div class="col-12">
+              <input type="password" class="form-control my-3" id="userPassword" placeholder="Password"  />
+              <div class="invalid-feedback error">
+                                
+              </div>
+            </div>
+            <a ><button class="btn btn-primary w-100 my-3" id="login">Log In</button></a>
+            <a href="#" class="text-decoration-none text-center"><p>Forgotten password?</p></a>
+           
+          </form>
+         
+          <hr />
+          <div class="text-center my-4">
+            <button class="btn btn-success btnColor text-light fs-6 fw-medium  btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#createModal">Create New Account</button>
+          </div>
+          <!-- create modal -->
+          <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- head -->
+                <div class="modal-header">
+                  <div>
+                    <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+                    <span class="text-muted fs-7">It's quick and easy.</span>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <form id="registration-form">
+                    <!-- names -->
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" id="firstName" placeholder="First name" required />
+                        <div class="invalid-feedback error">
+                         
+                        </div>
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" id="LastName" placeholder="last name"  required/>
+                        <div class="invalid-feedback error">
+                         
+                        </div>
+                      </div>
+                      <div class="col-12">
+                       <!-- email & pass -->
+                            <input type="email" class="form-control my-3"id="UEmail"required placeholder="Mobile number or email address" />
+                            <div class="invalid-feedback error">
+                                
+                            </div>
+                      </div>
+                      <div class="col-12">
+                        <!-- email & pass -->
+                        <input type="password" class="form-control my-3" minlength="8" id="UPassword"required placeholder="New password" />
+                        <div class="invalid-feedback error">
+                             
+                        </div>
+                       </div>
+                    </div>
+                    
+                    
+                    <!-- DOB -->
+                    <div class="row my-3">
+                      <span class="text-muted fs-7">Date of birth <i class="fas fa-question-circle" data-bs-toggle="popover" type="button" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                      <div class="col">
+                        <select class="form-select" id="UDay" required>
+                          <option value="" selected disabled> Day </option>
+                        </select>
+                        <div class="invalid-feedback error">
+                         
+                        </div>
+                      </div>
+                     
+                      <div class="col">
+                        <select class="form-select" id="UMonth"required placeholder="month">
+                          <option  value="" selected disabled> month </option>
+                        </select>
+                        <div class="invalid-feedback error">
+                         
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <select class="form-select" id="UYear" required>
+                          <option  value="" selected disabled> year </option>
+
+                        </select>
+                        <div class="invalid-feedback error">
+                         
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <!-- gender -->
+                    <div class="row my-3">
+                      <span class="text-muted fs-7">Gender <i class="fas fa-question-circle" data-bs-toggle="popover" type="button" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault1" >Male </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
+                          
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault1">Female </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                          
+                        </div> 
+                      </div>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault1">Custom </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- gender select -->
+                    <div class="d-none" id="genderSelect" required>
+                      
+                      <div class="my-3">
+                        <span class="text-muted fs-7">Your pronoun is visible to everyone.</span>
+                        <input type="text" class="form-control" placeholder="Gender (optional)" />
+                      </div>
+                    </div>
+                    <!-- disclaimer -->
+                    <div>
+                      <span class="text-muted fs-7 d-block mb-2">
+                        People who use our service may have uploaded your contact information to Facebook. Learn more.
+                        
+                      </span>
+                      <span class="text-muted fs-7 d-block">
+                        By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time. 
+                      </span>
+                    </div>
+                    <!-- btn -->
+                    <div class="text-center mt-3">
+                      <button type="button" class="btn btn-success btnColor btn-lg w-50  fw-medium"  id="register">Sign Up</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <!-- tag -->
+        <div class="my-5 pb-5 text-center">
+          <p class="fw-bold"><a href="#" class="text-decoration-none text-dark">Createa a Page</a> <span class="fw-normal">for a celebrity, band or business.</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white p-4 text-muted">
+      <div class="container">
+        <!-- language -->
+        <div class="d-flex flex-wrap">
+          <p class="mx-2 fs-7 mb-0">English (US)</p>
+          <p class="mx-2 fs-7 mb-0">Espanol</p>
+          <p class="mx-2 fs-7 mb-0">Francais(france)</p>
+          <p class="mx-2 fs-7 mb-0">Portugues(Brasil)</p>
+          <p class="mx-2 fs-7 mb-0">Italiano</p>
+          <p class="mx-2 fs-7 mb-0">Deutsch</p>
+          <p class="mx-2 fs-7 mb-0">العربية</p>
+        </div>
+        <hr />
+        <!-- actions -->
+        <div class="d-flex flex-wrap">
+          <p class="mx-2 fs-7 mb-0">Sign Up</p>
+          <p class="mx-2 fs-7 mb-0">Login</p>
+          <p class="mx-2 fs-7 mb-0">Messenger</p>
+          <p class="mx-2 fs-7 mb-0">Facebook Lite</p>
+          <p class="mx-2 fs-7 mb-0">Watch</p>
+        </div>
+        <!-- copy -->
+        <div class="mt-4 mx-2">
+          <p class="fs-7">facebook &copy; 2023</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
+
